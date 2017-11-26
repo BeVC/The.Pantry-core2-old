@@ -1,0 +1,17 @@
+@import "../../styles";
+
+app-not-found {
+    @include component();
+    @include page();
+
+    div {
+        text-align: center;
+        position: relative;
+        top: calc(50vh - 65px - 18.5px);
+    }
+    /*p {
+        text-align: center;
+        position: relative;
+        top: calc(50vh - 65px - 8px);
+    }*/
+}

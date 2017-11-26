@@ -9,6 +9,8 @@ import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from './app.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
     imports: [
@@ -21,7 +23,9 @@ import { NotFoundComponent } from './not-found/not-found.component';
     ],
     declarations: [
         AppComponent,
-        NotFoundComponent
+        NotFoundComponent,
+        FooterComponent,
+        NavbarComponent
     ],
     providers: [],
     bootstrap: [AppComponent]

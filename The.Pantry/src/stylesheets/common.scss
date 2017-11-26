@@ -1,0 +1,20 @@
+@mixin component() {
+    display: block;
+    box-sizing: border-box;
+}
+
+@mixin page($bgcolor: white){
+    min-height: calc(100vh - 50px - 80px);
+    display: block;
+    position:relative;
+    background-color: $bgcolor !important;
+}
+
+@mixin clearfix() {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}

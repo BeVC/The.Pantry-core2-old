@@ -1,0 +1,6 @@
+@import "../../../styles";
+
+app-food-list-overview {
+    @include component();
+    @include page(green);
+}

@@ -1,0 +1,8 @@
+@import "../../styles";
+
+app-footer{
+    @include component();
+
+    height: 50px;
+    background-color: white;
+}
