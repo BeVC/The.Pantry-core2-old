@@ -8,6 +8,7 @@
     display: block;
     position:relative;
     background-color: $bgcolor !important;
+    padding: 30px;
 }
 
 @mixin clearfix() {

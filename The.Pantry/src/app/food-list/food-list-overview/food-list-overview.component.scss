@@ -2,5 +2,17 @@
 
 app-food-list-overview {
     @include component();
-    @include page(green);
+    @include page($white);
+
+    .wrapper {
+        border: 1px solid $light-grey;
+        min-height: 400px;
+        padding: 20px;
+
+        .foodlist{
+            .fooditem{
+
+            }
+        }
+    }
 }

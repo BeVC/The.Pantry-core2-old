@@ -4,5 +4,18 @@ app-navbar{
     @include component();
 
     height: 80px;
-    background-color: white;
+    background-color: $very-light-grey;
+
+    .logo{
+        float: left;
+        padding-top: 10px;
+        padding-left:30px;
+        padding-bottom: 10px;
+        cursor: pointer;
+
+        img{
+            height: 60px;
+            width: 60px;
+        }
+    }
 }
