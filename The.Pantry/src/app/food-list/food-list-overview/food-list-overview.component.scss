@@ -4,14 +4,41 @@ app-food-list-overview {
     @include component();
     @include page($white);
 
+    .title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+
     .wrapper {
         border: 1px solid $light-grey;
         min-height: 400px;
         padding: 20px;
 
-        .foodlist{
-            .fooditem{
+        .foodlist {
+            .fooditem {
+                height: 58px;
 
+                .item-info {
+                    line-height: 58px;
+
+                    .name {
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+
+                    .date {
+                        font-size: 14px;
+                    }
+
+                    .location {
+                        font-size: 14px;
+                    }
+
+                    .quantity {
+                        font-size: 14px;
+                    }
+                }
             }
         }
     }

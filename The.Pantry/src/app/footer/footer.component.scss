@@ -1,8 +1,7 @@
 @import "../../styles";
 
-app-footer{
+app-footer {
     @include component();
-
     height: 50px;
-    background-color: white;
+    background-color: $very-light-grey;
 }
