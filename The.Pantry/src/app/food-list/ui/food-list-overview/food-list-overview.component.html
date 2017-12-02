@@ -2,13 +2,12 @@
 
 <div class="wrapper">
     <ul class="foodlist">
-        <li class="fooditem">
-            <div class="item-info">
-                <!--name date location quantity/portions-->
-                <span class="name">Spaghettisaus</span>
-                <span class="date">01/12/2017</span>
-                <span class="location">diepvries</span>
-                <span class="quantity">5</span>
+        <li class="fooditem-header">
+            <div class="header-styling">
+                <span class="name"></span>
+                <span class="date">Bewaard op</span>
+                <span class="location">Locatie</span>
+                <span class="quantity">Hoeveelheid</span>
             </div>
         </li>
         <li class="fooditem">
@@ -18,7 +17,26 @@
                 <span class="date">01/12/2017</span>
                 <span class="location">diepvries</span>
                 <span class="quantity">5</span>
+                <span class="actions">
+                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-trash"></i>
+                </span>
+            </div>
+        </li>
+        <li class="fooditem">
+            <div class="item-info">
+                <!--name date location quantity/portions-->
+                <span class="name">Spaghettisaus</span>
+                <span class="date">01/12/2017</span>
+                <span class="location">diepvries</span>
+                <span class="quantity">5</span>
+                <span class="actions">
+                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-trash"></i>
+                </span>
             </div>
         </li>
     </ul>
 </div>
+
+<app-popup-delete></app-popup-delete>

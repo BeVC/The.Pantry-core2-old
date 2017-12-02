@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 //import { HttpClientModule } from '@angular/common/http';
 
 import { FoodListModule } from "./food-list/food-list.module";
+import { SharedModule } from "./shared/shared.module";
 import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { NavbarComponent } from './navbar/navbar.component';
         BrowserModule,
         //FormsModule,
         //HttpClientModule,
+        SharedModule,
         FoodListModule,
 
         AppRoutingModule
