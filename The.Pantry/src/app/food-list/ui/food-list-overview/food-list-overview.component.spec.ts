@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FoodListOverviewComponent } from './food-list-overview.component';
+import { PopupDeleteComponent } from "../../../shared/ui/popup-delete/popup-delete.component";
 
 describe('FoodListComponent', () => {
     let component: FoodListOverviewComponent;
@@ -8,7 +9,10 @@ describe('FoodListComponent', () => {
 
     beforeEach(async(() => {
         TestBed.configureTestingModule({
-            declarations: [FoodListOverviewComponent]
+            declarations: [
+                FoodListOverviewComponent,
+                PopupDeleteComponent
+            ]
         })
             .compileComponents();
     }));
