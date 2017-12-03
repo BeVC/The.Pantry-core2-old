@@ -34,3 +34,18 @@ body {
 ol, ul {
     list-style: none;
 }
+
+.button {
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 3px;
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &.red {
+        background-color: #ff3a2d;
+        border: 1px solid darken(#ff3a2d,  20%);
+        color:white;
+    }
+}
