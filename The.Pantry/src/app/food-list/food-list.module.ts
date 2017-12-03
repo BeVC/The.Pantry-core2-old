@@ -5,6 +5,7 @@ import { SharedModule } from "../shared/shared.module";
 
 import { FoodListRoutingModule } from './food-list-routing.module';
 import { FoodListOverviewComponent } from './ui/food-list-overview/food-list-overview.component';
+import { PopupAddFooditemComponent } from './ui/popup-add-fooditem/popup-add-fooditem.component';
 
 @NgModule({
     imports: [
@@ -13,6 +14,6 @@ import { FoodListOverviewComponent } from './ui/food-list-overview/food-list-ove
 
         FoodListRoutingModule
     ],
-    declarations: [FoodListOverviewComponent]
+    declarations: [FoodListOverviewComponent, PopupAddFooditemComponent]
 })
 export class FoodListModule { }

@@ -3,7 +3,7 @@
 app-popup-delete {
     @include component();
 
-    .overlay {
+    /*.overlay {
         background-color: $black;
         opacity: 0.6;
         width: 100%;
@@ -11,7 +11,7 @@ app-popup-delete {
         position: fixed;
         top: 0;
         left: 0;
-    }
+    }*/
 
     .popup-wrapper {
         display: block;
