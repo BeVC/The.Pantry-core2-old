@@ -55,7 +55,13 @@ ol, ul {
 
     &.red {
         background-color: #ff3a2d;
-        border: 1px solid darken(#ff3a2d,  20%);
-        color:white;
+        border: 1px solid darken(#ff3a2d, 20%);
+        color: white;
+    }
+
+    &.green {
+        background-color: #35b238;
+        border: 1px solid darken(#35b238, 10%);
+        color: white;
     }
 }

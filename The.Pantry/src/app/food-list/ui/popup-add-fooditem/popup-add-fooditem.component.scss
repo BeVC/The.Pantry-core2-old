@@ -30,5 +30,29 @@ app-popup-add-fooditem {
                 font-weight: 700;
             }
         }
+
+        .form-group {
+            margin-bottom: 20px;
+
+            label {
+                font-weight: 700;
+                font-size: 14px;
+                width: 25%;
+                display: inline-block;
+            }
+
+            .form-control {
+                height: 35px;
+                border: 1px solid $light-grey;
+                border-radius: $radius;
+                padding-left: 15px;
+                width: 70%;
+                font-size: 14px;
+            }
+        }
+
+        button {
+            float: right;
+        }
     }
 }
