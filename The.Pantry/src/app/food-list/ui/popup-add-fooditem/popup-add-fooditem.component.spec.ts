@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PopupAddFooditemComponent } from './popup-add-fooditem.component';
+import { DropdownComponent } from "../../../shared/ui/widgets/dropdown/dropdown.component";
 
 describe('PopupAddFooditemComponent', () => {
   let component: PopupAddFooditemComponent;
@@ -8,7 +9,10 @@ describe('PopupAddFooditemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PopupAddFooditemComponent ]
+        declarations: [
+            PopupAddFooditemComponent,
+            DropdownComponent
+        ]
     })
     .compileComponents();
   }));

@@ -3,6 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FoodListOverviewComponent } from './food-list-overview.component';
 import { PopupDeleteComponent } from "../../../shared/ui/popup-delete/popup-delete.component";
 import { PopupAddFooditemComponent } from "../popup-add-fooditem/popup-add-fooditem.component";
+import { DropdownComponent } from "../../../shared/ui/widgets/dropdown/dropdown.component";
 
 describe('FoodListComponent', () => {
     let component: FoodListOverviewComponent;
@@ -13,7 +14,8 @@ describe('FoodListComponent', () => {
             declarations: [
                 FoodListOverviewComponent,
                 PopupDeleteComponent,
-                PopupAddFooditemComponent
+                PopupAddFooditemComponent,
+                DropdownComponent
             ]
         })
             .compileComponents();

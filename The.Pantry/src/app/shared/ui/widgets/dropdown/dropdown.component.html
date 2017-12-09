@@ -1,0 +1,19 @@
+<div class="ddl-input" (click)="uiOnSelectBoxClicked()">
+    <span>diepvries<i class="fa fa-chevron-down sign"></i></span>
+</div>
+
+<ul class="ddl-options" [class.isOpen]="isOpen">
+    <li (click)="uiOnSelect()">
+        <span>kies lokatie<i class="fa fa-chevron-up"></i></span>
+    </li>
+    <li>
+        <span>diepvries</span>
+    </li>
+    <li>
+        <span>frigo</span>
+    </li>
+    <li>
+        <span>nieuwe locatie</span>
+    </li>
+</ul>
+

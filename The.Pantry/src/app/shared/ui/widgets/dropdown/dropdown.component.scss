@@ -1,0 +1,117 @@
+@import "../../../../../styles";
+
+app-dropdown {
+    @include component();
+    position: relative;
+
+    .ddl-input {
+        background-color: $white;
+        border: 1px solid $light-grey;
+        border-radius: $radius;
+        height: 35px;
+        cursor: pointer;
+
+        span {
+            line-height: 35px;
+            padding-left: 15px;
+            font-size: 14px;
+
+            .sign {
+                font-size: 12px;
+                margin-right: 10px;
+                line-height: 35px;
+                float: right;
+            }
+        }
+    }
+
+    .ddl-options {
+        z-index: 1;
+        position: absolute;
+        background-color: $white;
+        box-shadow: 0 3px 4px rgba(0,0,0,0.12);
+        border-radius: $radius;
+        width: 100%;
+        top: 0;
+        display: none;
+
+        &.isOpen {
+            display: block;
+        }
+
+        li {
+            span {
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 35px;
+                color: $black;
+                background-color: $white;
+                border-radius: $radius;
+                margin-left: 5px;
+                margin-right: 4px;
+                padding-left: 10px;
+                display: block;
+            }
+
+            &:first-of-type {
+                padding-top: 5px;
+
+                span {
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 30px;
+                    text-transform: none;
+                    color: $black;
+
+                    i {
+                        float: right;
+                        line-height: 30px;
+                        margin-right: 6px;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            &:last-of-type {
+                padding-bottom: 5px;
+            }
+
+            &:hover {
+                span {
+                    background-color: $light-grey;
+                }
+            }
+        }
+    }
+    /*.selected-box {
+        border: 1px solid $light-grey;
+        border-radius: $radius;
+        height: 35px;
+
+        span {
+            line-height: 35px;
+            padding-left: 15px;
+
+            i {
+                position: inherit;
+                float: right;
+                line-height: 35px;
+                font-size: 12px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .select-options {
+        position: absolute;
+        background-color: $white;
+
+        ul {
+            li{
+                padding-left: 15px;
+            }
+        }
+    }*/
+}
