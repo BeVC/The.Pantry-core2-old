@@ -8,6 +8,8 @@ app-food-list-overview {
         font-size: 18px;
         font-weight: 700;
         margin-bottom: 30px;
+        display: inline-block;
+        margin-right: 25px;
     }
 
     .wrapper {
@@ -89,8 +91,8 @@ app-food-list-overview {
                             color: $dark-grey;
                             cursor: pointer;
 
-                            &:first-of-type {
-                                margin-right: 20px;
+                            &:not(:first-of-type) {
+                                margin-left: 20px;
                             }
                         }
                     }

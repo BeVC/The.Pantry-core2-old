@@ -1,6 +1,6 @@
 <div class="overlay"></div>
 
-<div class="popup-wrapper">
+<div class="popup-wrapper" [class.add-location]="true">
     <i class="fa fa-times exit"></i>
     <p class="form-title">Een nieuw item toevoegen</p>
     <form>
@@ -8,10 +8,13 @@
             <label for="name">Naam:</label>
             <input type="text" class="form-control" id="name" placeholder="vul hier in" required />
         </div>
-
         <div class="form-group">
             <label for="location">Locatie:</label>
             <app-dropdown></app-dropdown>
+        </div>
+        <div class="form-group">
+            <label for="name">Nieuwe locatie:</label>
+            <input type="text" class="form-control" id="name" placeholder="vul hier in" required />
         </div>
         <div class="form-group">
             <label for="amount">Hoeveelheid:</label>

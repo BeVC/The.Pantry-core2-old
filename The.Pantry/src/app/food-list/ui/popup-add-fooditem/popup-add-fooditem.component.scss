@@ -14,6 +14,10 @@ app-popup-add-fooditem {
         top: calc(50% - 150px);
         left: calc(50% - 300px);
 
+        &.add-location{
+            height: 340px;
+        }
+
         .exit {
             position: absolute;
             top: 10px;
