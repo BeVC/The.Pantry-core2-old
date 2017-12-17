@@ -47,3 +47,6 @@
 
 <app-popup-delete *ngIf="false"></app-popup-delete>
 <app-popup-add-fooditem *ngIf="false"></app-popup-add-fooditem>
+
+<button type="button" (click)="onRXJSTestClicked()">RXJS testing</button>
+<p *ngFor="let item of apiValues">{{item.name}}</p>
