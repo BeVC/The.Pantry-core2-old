@@ -49,4 +49,13 @@
 <app-popup-add-fooditem *ngIf="false"></app-popup-add-fooditem>
 
 <button type="button" (click)="onRXJSTestClicked()">RXJS testing</button>
-<p *ngFor="let item of apiValues">{{item.name}}</p>
+<input type="text" (keyup)="search($event.target.value)" placeholder="here"/>
+<!--<ul class="tester">
+    <li *ngFor="let item of apiValues"> {{item.name}}</li>
+</ul>-->
+
+<ul>
+    <li *ngFor="let item of filteredTest$ | async">
+        {{item.name}}
+    </li>
+</ul>

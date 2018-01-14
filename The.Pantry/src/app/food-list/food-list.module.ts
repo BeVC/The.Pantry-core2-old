@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from "../shared/shared.module";
 
+import { FoodListService } from "./service/food-list.service";
+
 import { FoodListRoutingModule } from './food-list-routing.module';
 import { FoodListOverviewComponent } from './ui/food-list-overview/food-list-overview.component';
 import { PopupAddFooditemComponent } from './ui/popup-add-fooditem/popup-add-fooditem.component';
@@ -14,6 +16,12 @@ import { PopupAddFooditemComponent } from './ui/popup-add-fooditem/popup-add-foo
 
         FoodListRoutingModule
     ],
-    declarations: [FoodListOverviewComponent, PopupAddFooditemComponent]
+    declarations: [
+        FoodListOverviewComponent,
+        PopupAddFooditemComponent
+    ],
+    providers: [
+        FoodListService
+    ]
 })
 export class FoodListModule { }

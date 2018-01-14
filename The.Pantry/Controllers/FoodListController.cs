@@ -33,6 +33,7 @@ namespace The.Pantry.Controllers
             List<FoodListItem> list = new List<FoodListItem>();
             list.Add(new FoodListItem("spaghetti", new DateTime(), "diepvries", 5));
             list.Add(new FoodListItem("stoofvlees", new DateTime(), "diepvries", 1));
+            list.Add(new FoodListItem("couscous met worst", new DateTime(), "diepvries", 1));
 
             return list;
         }
